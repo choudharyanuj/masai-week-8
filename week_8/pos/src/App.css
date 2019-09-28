@@ -29,3 +29,17 @@
 .table-size {
     margin-top: 5%;
 }
+
+.crousel-img {
+    height: 600px;
+}
+
+.card-img {
+    height: 200px;
+}
+
+.bg-image {
+    background-image: url("https://images.unsplash.com/photo-1527224538127-2104bb71c51b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    height: 600px;
+    background-size: 100% 100%;
+}
