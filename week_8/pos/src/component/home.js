@@ -135,7 +135,7 @@ class Home extends React.Component {
                                    <div className="card-body bg-dark">
                                        <h6 className=" card-title text-center text-warning">{item.name}</h6>
                                         <p className="card-text text-center text-warning">{item.desc}</p>
-                                        <a href={item.btn} target ="_blank"><button>Click Here to Know More About Dish</button></a>
+                                           <a href={item.btn} target="_blank"><button className = "btn btn-outline-success">Click Here to Know More About Dish</button></a>
                                    </div>
                                </div>
                            </div>
@@ -154,7 +154,7 @@ class Home extends React.Component {
                                         <div className="card-body bg-dark">
                                             <h6 className=" card-title text-warning text-center">{item.name}</h6>
                                             <p className="card-text text-center text-warning">{item.desc}</p>
-                                            <a href={item.btn} target="_blank"><button>Click Here to Know More About Dish</button></a>
+                                            <a href={item.btn} target="_blank"><button className="btn btn-outline-success">Click Here to Know More About Dish</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ class Home extends React.Component {
                                         <div className="bg-dark card-body">
                                             <h6 className=" card-title text-center text-warning">{item.name}</h6>
                                             <p className="card-text text-center text-warning">{item.desc}</p>
-                                            <a href={item.btn}><button>Click Here to Know More About Dish</button></a>
+                                            <a href={item.btn} target = "_blank"><button className="btn btn-outline-success">Click Here to Know More About Dish</button></a>
                                         </div>
                                     </div>
                                 </div>

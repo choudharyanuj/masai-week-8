@@ -5,18 +5,18 @@ let quantity_arr = [];
 let rate_arr = [];
 let total_price = [];
 let total = 0;
-
+let price = 150
 class Bill extends React.Component {
    
     data_entry = (e) => {
         let sum = 0;
         let item_name = document.getElementById('item_name').value;
         let quantity = document.getElementById('quantity').value;
-        let rate = document.getElementById('rate').value;
+        // let rate = document.getElementById('rate').value;
         dish_name.push(item_name);
         quantity_arr.push(quantity);
-        rate_arr.push(rate);
-        total = quantity * rate;
+        // rate_arr.push(rate);
+        total = quantity * price;
         total_price.push(total);
         // console.log(dish_name);
         // console.log(quantity_arr);
@@ -27,7 +27,7 @@ class Bill extends React.Component {
             sum = sum + total_price[i]
         }
         alert(
-            "Yor Odrde Was :-" + " " + item_name + " " + "Your Total Bill Ammount is :-" + " " + sum
+            "Yor Odrde Was :-" + " " + item_name + " " + "Your Total Bill Ammount is :-" + " " + sum +"$" + " " + "With the rate of 150$ each"
         )
         console.log(sum); 
     }
@@ -40,14 +40,14 @@ class Bill extends React.Component {
                     <tr>
                         <th scope="col">Name of the item</th>
                         <th scope="col">Quantity</th>
-                        <th scope="col">Rate</th>
+                        {/* <th scope="col">Rate</th> */}
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope = "row"><input type = "text" placeholder = "Item name" id = "item_name"></input></th>
-                        <th scope = "row"><input type = "text" placeholder = "Quantity" id = "quantity"></input></th>
-                        <th scope = "row"><input type = "text" placeholder = "Rate" id = "rate"></input></th>
+                        <th scope = "row"><input type = "text" placeholder = "Item name" id = "item_name" className = "text-center"></input></th>
+                                <th scope="row"><input type="text" placeholder="Quantity" id="quantity" className="text-center"></input></th>
+                        {/* <th scope = "row"><input type = "text" placeholder = "Rate" id = "rate"></input></th> */}
                     </tr>
                 </tbody>
             </table>
