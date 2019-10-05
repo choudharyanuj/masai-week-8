@@ -19,9 +19,6 @@ class App extends React.Component {
             <Route path="/bill" component={Bill} />
           </React.Fragment>
         </div>
-        {/* <div>
-          <Home/>
-        </div> */}
       </div>
     )
   }
